@@ -1,4 +1,6 @@
-Lyft-demo
-=========
+**Lyft-demo**
+===========
 
-![pre-load](http://4.1m.yt/c5LBNTu.png)
+![pre-load](http://1.1m.yt/_cnUkft.png)
+
+![intro-city](http://2.1m.yt/9ku-hWn.png)
