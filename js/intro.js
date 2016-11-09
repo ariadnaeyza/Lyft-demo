@@ -1,4 +1,3 @@
 jQuery(window).load(function(){
-    jQuery(".logo-preload").fadeOut("slow");
-    jQuery(".preload").fadeOut("slow");
+    jQuery(".preload").delay(2000).fadeOut("slow");
 });
