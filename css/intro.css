@@ -1,6 +1,10 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
     text-align: center;
 }
 /*INTRO*/
@@ -9,16 +13,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
 }
-
 /*PRE-LOAD*/
 .preload{
-    background: linear-gradient( #9C27B0, rgba(233, 30, 99, 0.76));
+    background: linear-gradient(rgba(233, 30, 99, 0.76),  #9C27B0);
+    width: 100%;
     height: 100vh;
+    position: absolute;
+    z-index: 200;
 }
-.logo-preload,
-.logo{
+.preload img{
     margin-top: 200px;
     margin-bottom: 170px;
     width: 170px;
@@ -26,6 +30,18 @@
 }
 
 /*SECTION-INTRO*/
+#section-intro{
+    position: relative;
+}
+#section-intro img{
+    margin-top: 200px;
+    margin-bottom: 170px;
+    width: 170px;
+    height: 120px;
+}
+#section-intro .row{
+    position: relative;
+}
 .btn-grad {
     background: linear-gradient(to right, #9C27B0, rgba(233, 30, 99, 0.76));
 }
