@@ -38,7 +38,7 @@
         <div class="divider"></div>
 
         <div class="container">   
-            <div id="section-sign-up">
+            <form id="section-sign-up">
                 <div class="row">
                     <div class="col s2">
                         <img src="img/bandera-per%C3%BA.png" alt="">
@@ -50,27 +50,30 @@
                         <p class="code">+51</p>
                     </div>
                     <div class="col s7">
-                        <input type="tel" placeholder="123456789">
+                        <input name="tel" type="tel" placeholder="123456789">
                     </div>
                 </div>
-            </div>
+            </form>
             <p class="pt-10">We'll send a text to verify your phone</p>
             </div>
         </div>
         
         <footer id="footer-next">
-            <a class="waves-effect waves-light btn-large btn-pink">NEXT</a>    
+            <a href="verify.html" class="waves-effect waves-light btn-large btn-pink">NEXT</a>    
         </footer>
 
 
         <!-- jQuery-->
         <script type="text/javascript" src="js/materialize/jquery-2.1.1.min.js"></script>
+        
+        <!-- Plugin Validate -->
+        <script src="js/jquery-validate/jquery.validate.min.js"></script>
 
         <!-- Materialize -->
         <script type="text/javascript" src="js/materialize/materialize.min.js"></script>
 
         <!-- JS -->
-        <script type="text/javascript" src="js/intro.js"></script>
+        <script type="text/javascript" src="js/sign-up.js"></script>
     </body>
 
 </html>
