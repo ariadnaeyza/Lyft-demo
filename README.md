@@ -6,3 +6,5 @@
 ![intro-city](http://2.1m.yt/9ku-hWn.png)
 
 ![sign-up-page](http://1.1m.yt/yabQnvm.png)
+
+![verify-page](http://4.1m.yt/3rpaaey.png)
