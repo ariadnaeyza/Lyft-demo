@@ -8,3 +8,5 @@
 ![sign-up-page](http://1.1m.yt/yabQnvm.png)
 
 ![verify-page](http://4.1m.yt/3rpaaey.png)
+
+![date-page](http://4.1m.yt/LU5DyL2.png)

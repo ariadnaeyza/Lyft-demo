@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Lyft</title>
 
     <!-- Icon -->
     <link rel="icon" type="image/png" href="img/icon.png">
 
-    <!-- Google Icon Font -->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Icon Font-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Materialize -->
-    <link type="text/css" rel="stylesheet" href="css/materialize/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize/materialize.css">
 
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/register-date.css">
 </head>
+
 <body>
 
-    
+    <section id="header-sign-up">
+        <div class="cont-header-sign-up">
+            <div class="col s1 left-align">
+                <a href="verify.html"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col s11">
+                <h5 class="tittle-sign-up">Sign up</h5>
+                <p>Join now for fee ride credit</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="container">
+        <form id="section-date">
+            <div class="row date-name">
+                <div class="col s2">
+                    <img src="img/icon/user.png" alt="user">
+                </div>
+                <div class="col s5">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="col s5">
+                    <input type="text" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row date-email">
+                <div class="col s2">
+                    <img src="img/icon/email.png" alt="email">
+                </div>
+                <div class="col s10">
+                    <input type="email" placeholder="Email">
+                </div>
+            </div>
+        </form>
+        <form>
+            <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+            <label for="filled-in-box">I agree to Lyft's <a href="#">Terms of Service</a></label>
+        </form>
+    </div>
+
+
+    <footer id="footer-next">
+        <a class="waves-effect waves-light btn-large btn-pink">NEXT</a>
+    </footer>
+
+    <!-- jQuery-->
+    <script type="text/javascript" src="js/materialize/jquery-2.1.1.min.js"></script>
+
+    <!-- Plugin Validate -->
+    <script src="js/jquery-validate/jquery.validate.min.js"></script>
+
+    <!-- Materialize -->
+    <script type="text/javascript" src="js/materialize/materialize.min.js"></script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/register-date.js"></script>
 </body>
+
 </html>
