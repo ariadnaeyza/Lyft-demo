@@ -53,6 +53,10 @@ body{
     text-align: left;
     padding-top: 13px;
 }
+#section-sign-up input[type=tel]:focus:not([readonly]){
+    border-bottom: none;
+    box-shadow: none;
+}
 /*FOOTER-NEXT*/
 #footer-next{
     position: absolute;
