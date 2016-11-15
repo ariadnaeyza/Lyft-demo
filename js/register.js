@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    
-    $( "#btn-next" ).addClass("disabled");
+    $("#btn-next" ).addClass("disabled");
+    $("#btn-next-2").addClass("disabled");
     
     $("#section-sign-up").validate({
         rules: {
@@ -23,13 +23,16 @@ $(document).ready(function () {
     
     $("#btn-next").click(function(){
         if($("#section-sign-up").valid()){
+            var phone = document.getElementById("phone").value;
             var numRandom = Math.floor((Math.random() * 9000) + 1000);
             alert("Your code is LAB-" + numRandom);
+            /*localStorage.setItem("phoneNumber", phone);
+            localStorage.setItem("randomNum",numRandom);*/
             window.location.href= "verify.html";
         }
     });
     
-    /*$("#section-date").validate({
+    $("#section-date").validate({
         rules: {
             firstName:{
                 required: true,
@@ -63,8 +66,15 @@ $(document).ready(function () {
             
         },
         submitHandler: function(form){
-            $("#btn-next").removeAttr("disabled");
+            $("#btn-next-2").removeClass("disabled");
         }
-    });*/
+        
+    });
+    $("#btn-next-2").click(function(){
+        if($("#section-date").valid()){
+            
+            window.location.href= "geolocation.html";
+        }
+    });
     
 });
