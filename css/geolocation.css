@@ -40,6 +40,12 @@ input#pac-input {
     bottom: 60px !important;
 }
 
+.side-nav .userView .perfil{
+    height: 90px;
+    margin: 0px 80px;
+    width: 90px;
+}
+
 #map {
     width: 100%;
     height: 100vh;
