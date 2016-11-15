@@ -1,6 +1,6 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: -12.1197142, lng: -77.0232108},
         zoom: 6
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
@@ -34,7 +34,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: -12.1197142, lng: -77.0232108},
         zoom: 6,
     });
 
