@@ -10,3 +10,7 @@
 ![verify-page](http://4.1m.yt/3rpaaey.png)
 
 ![date-page](http://4.1m.yt/LU5DyL2.png)
+
+![map](http://3.1m.yt/WbNjod4.png)
+
+![barra-lateral](http://3.1m.yt/o8xfLrq.png)
