@@ -1,7 +1,7 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -12.1197142, lng: -77.0232108},
-        zoom: 6
+        zoom: 15,
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -35,7 +35,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -12.1197142, lng: -77.0232108},
-        zoom: 6,
+        zoom: 15,
     });
 
     // Create the search box and link it to the UI element.
@@ -95,11 +95,3 @@ function initAutocomplete() {
     });
     // [END region_getplaces]
 }
-
-
-$('.button-collapse').sideNav({
-    menuWidth: 280, // Default is 240
-    edge: 'left', // Choose the horizontal origin
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    draggable: true // Choose whether you can drag to open on touch screens
-});
