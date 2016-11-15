@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $("#section-sign-up").submit(function() {
-        $("#btn-next").attr('disabled');
-    });
+    
+    $( "#btn-next" ).addClass("disabled");
+    
     $("#section-sign-up").validate({
         rules: {
             phone:{
@@ -17,13 +17,16 @@ $(document).ready(function () {
             }
         },
         submitHandler: function(form){
-            $("#btn-next").removeAttr("disabled");
+            $("#btn-next").removeClass("disabled");
         }
     });
     
     $("#btn-next").click(function(){
-        var numRandom = Math.floor((Math.random() * 9000) + 1000);
-        alert("This is your code" + numRandom);
+        if($("#section-sign-up").valid()){
+            var numRandom = Math.floor((Math.random() * 9000) + 1000);
+            alert("Your code is LAB-" + numRandom);
+            window.location.href= "verify.html";
+        }
     });
     
     /*$("#section-date").validate({
