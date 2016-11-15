@@ -93,5 +93,4 @@ function initAutocomplete() {
         });
         map.fitBounds(bounds);
     });
-    // [END region_getplaces]
 }

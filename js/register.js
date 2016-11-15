@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#btn-next" ).addClass("disabled");
     $("#btn-next-2").addClass("disabled");
     
-    $("#section-sign-up").validate({
+    $("#section-sign-up").validate({    
         rules: {
             phone:{
                 required: true,
@@ -18,18 +18,27 @@ $(document).ready(function () {
         },
         submitHandler: function(form){
             $("#btn-next").removeClass("disabled");
+            form.submit();
         }
     });
     
     $("#btn-next").click(function(){
+        
         if($("#section-sign-up").valid()){
-            var phone = document.getElementById("phone").value;
+            
+            var phone = $("#phone").val();
+            
             var numRandom = Math.floor((Math.random() * 9000) + 1000);
             alert("Your code is LAB-" + numRandom);
-            /*localStorage.setItem("phoneNumber", phone);
-            localStorage.setItem("randomNum",numRandom);*/
+            
+            var userPhone = window.localStorage.setItem("phoneNumber", phone);
+            var codeRandom = window.localStorage.setItem("randomNum",numRandom);
+            
             window.location.href= "verify.html";
         }
+        
+        /*var numPhone = window.localStorage.getItem("phoneNumber");
+        $("#userNum").text(userPhone);*/
     });
     
     $("#section-date").validate({
@@ -67,9 +76,13 @@ $(document).ready(function () {
         },
         submitHandler: function(form){
             $("#btn-next-2").removeClass("disabled");
+            form.submit();
         }
-        
     });
+    
+    
+    
+    
     $("#btn-next-2").click(function(){
         if($("#section-date").valid()){
             
